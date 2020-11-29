@@ -2,6 +2,7 @@
   "name": "dwfilmes",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://claytim2.github.io/dwfilmes/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
@@ -13,6 +14,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "deploy":"npm run build && cd node_modules && cd .bin && gh-pages -d ../../build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
