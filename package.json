@@ -1,20 +1,24 @@
 {
   "name": "dwfilmes",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "homepage": "https://claytim2.github.io/dwfilmes/",
+  "homepage": "https://claytim2.github.io/dwfilmes/.",
   "dependencies": {
+    "@reach/router": "^1.3.4",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.2.2",
     "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-image": "^4.0.3",
+    "react-pose": "^4.0.10",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "deploy":"npm run build && cd node_modules && cd .bin && gh-pages -d ../../build",
+    "deploy": "npm run build && cd node_modules && cd .bin && gh-pages -d ../../build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+*:focus {
+    outline: #ff5252;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    position: relative;
+    background: #101010;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+    min-height: 100%;
+    font-family: "Numans", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app {
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+    overflow: hidden;
+    font-size: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4em;
+    font-family: "Imprima", sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: "Imprima", sans-serif;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: "Imprima", sans-serif;
+}
+
+h4 {
+    font-size: 1em;
+    font-family: "Imprima", sans-serif;
+}
+
+h5 {
+    font-size: 1em;
+    font-family: "Imprima", sans-serif;
+}
+
+.color-orange {
+    color: #ff5252;
+}
+
+a {
+    display: block;
+}
+
+a:active,
+a:visited,
+a:hover,
+a:link {
+    color: #fff;
+}
+
+.main-outer {
+    flex: 1;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3em;
+    background: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tmdb-attribution {
+    margin-left: auto;
+}
+
+.circle {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background: #ff5252;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+    h4 {
+        font-size: 0.8em;
+    }
+    h5 {
+        font-size: 0.5em;
+    }
+
+    .tmdb-attribution {
+        margin: 5px;
+        margin-left: auto;
+    }
 }
